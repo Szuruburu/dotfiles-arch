@@ -1,0 +1,7 @@
+menu,
+.window-frame,
+.csd .menu,
+.csd .dropdown,
+.csd .context-menu {
+    border-radius: 1px;
+}

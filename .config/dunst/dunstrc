@@ -1,0 +1,44 @@
+[global]
+monitor = 0
+follow = mouse
+width = 400
+origin = bottom-right
+offset = 5x48
+shrink = no
+separator_height = 0
+padding = 20
+horizontal_padding = 20
+frame_width = 0
+sort = false
+font = Monocraft 9
+line_height = 4
+format = "<b>%s</b>\n%b"
+alignment = left
+word_wrap = yes
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+sticky_history = yes
+history_length = 20
+browser = /usr/bin/firefox -new-tab
+always_run_script = true
+title = Dunst
+class = Dunst
+
+[urgency_low]
+timeout = 4
+background = "#090909"
+foreground = "#93a1a1"
+frame_color = "#090909"
+
+[urgency_normal]
+timeout = 4
+background = "#090909"
+foreground = "#93a1a1"
+frame_color = "#090909"
+
+[urgency_critical]
+timeout = 4
+background = "#090909"
+foreground = "#93a1a1"
+frame_color = "#090909"
