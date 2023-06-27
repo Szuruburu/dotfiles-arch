@@ -90,7 +90,7 @@ alias lg="exa --color=always -lagh --git"
 alias tree="tree -C"
 alias dir='-as --group-directories-first'
 alias cls='clear'
-alias diff='diff --color=auto -y'
+#alias diff='diff --color=auto -y'
 #alias grep='grep --color=auto'
 
 alias ping='prettyping'
@@ -128,6 +128,10 @@ alias lsmonitors='for p in /sys/class/drm/*/status; do con=${p%/status}; echo -n
 # Utils
 alias clock='tty-clock -cs'
 alias wget='wget --show-progress'
+alias dirstat='ncdu --graph-style half-block --si --exclude /mnt'
+
+# VPN
+alias peum='echo "a7PlN3ZMp*J&t/5a" | sudo openconnect --csd-wrapper /usr/lib/openconnect/hipreport.sh --protocol=gp -u szulemi1@i-s.com.pl --servercert pin-sha256:8SOF9IdK6YzjUEjByDI+VP/WmMqUsUpHEtc+G2ugQZQ= --passwd-on-stdin 195.205.223.118'
 
 #PS1='\[\e[36m\][$(date +%H:%M)]\[\e[0m\] \W\$ '
 
@@ -149,3 +153,4 @@ export pdir="/home/szu/.config/picom/"
 export dot="/home/szu/build/dotfiles/Szuruburu/dotfiles-arch/"
 PERL_MB_OPT="--install_base \"/home/szu/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/szu/perl5"; export PERL_MM_OPT;
+

@@ -5,3 +5,7 @@ menu,
 .csd .context-menu {
     border-radius: 1px;
 }
+
+window, .window {
+	border: none;
+}
