@@ -143,7 +143,8 @@ alias peum='echo "a7PlN3ZMp*J&t/5a" | sudo openconnect --csd-wrapper /usr/lib/op
 setxkbmap -layout pl
 
 ##PS1='[\[\e[1;31m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\] \W]\$ '
-export PS1="\[\e[32m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;48m\]\\$\[\e[m\] "
+export PS1="\[\e[32m\][\[\e[m\]\[\e[34m\]\u\[\e[m\]\[\e[33m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[36m\]\w\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32;48m\]\[\e[33m\]\$(parse_git_branch)\[\e[32;48m\]$\[\e[m\] "
+export TERM=xterm
 
 
 PATH="/home/szu/perl5/bin${PATH:+:${PATH}}"; export PATH;
@@ -153,4 +154,6 @@ export pdir="/home/szu/.config/picom/"
 export dot="/home/szu/build/dotfiles/Szuruburu/dotfiles-arch/"
 PERL_MB_OPT="--install_base \"/home/szu/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/szu/perl5"; export PERL_MM_OPT;
-
+HISTSIZE=100000
+HISTFILESIZE=100000
+HISTTIMEFORMAT="%F %T "
