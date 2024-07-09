@@ -19,6 +19,7 @@ noremap <silent> <M-4> :call SpacesToTabs(4)<CR>
 
 let g:python_recommended_style = 0
 autocmd FileType python setlocal noexpandtab
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:neovide_scale_factor = 1.0
 let g:neovide_padding_top = 0
